@@ -32,7 +32,7 @@ services:
         weightrange-topic:1:1,
         weightrange-topic-2:1:1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://172.31.27.224:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://172.31.21.66:9092
       KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
       KAFKA_HEAP_OPTS: -Xmx512M -Xms256M
     volumes:
