@@ -41,4 +41,5 @@ services:
       - ./kafka-data:/kafka/data
     entrypoint: /bin/bash -c "chmod -R 775 /kafka && chmod -R 775 /kafka/data && /opt/kafka_2.13-2.8.1/bin/kafka-server-start.sh /opt/kafka_2.13-2.8.1/config/server.properties"
     depends_on:
-      - zookeeper
+      zookeeper:
+        condition: service_healthy
